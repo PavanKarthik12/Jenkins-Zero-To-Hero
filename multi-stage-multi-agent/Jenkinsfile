@@ -15,7 +15,7 @@ pipeline {
       }
       steps {
         sh '''
-            pip3 install -r multi-stage-multi-agent/requirements.txt --user
+            sudo pip3 install -r multi-stage-multi-agent/requirements.txt 
             python3  multi-stage-multi-agent/hello.py
             '''
       }
