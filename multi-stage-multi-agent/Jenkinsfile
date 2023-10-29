@@ -14,7 +14,7 @@ pipeline {
         docker { image 'python' }
       }
       steps {
-        sh 'python3 hello.py'
+        sh 'python3 --version'
       }
     }
     stage('Database'){
