@@ -14,7 +14,7 @@ pipeline {
         docker { image 'python' }
       }
       steps {
-        sh 'python3 /multi-stage-multi-agent/hello.py'
+        sh 'python3 multi-stage-multi-agent/hello.py'
       }
     }
     stage('Database'){
