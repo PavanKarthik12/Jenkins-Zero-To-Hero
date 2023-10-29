@@ -14,10 +14,10 @@ pipeline {
         docker { image 'python' }
       }
       steps {
-        sh 'pip3 install -r multi-stage-multi-agent/requirements.txt'
-      }
-      steps{
-        sh 'python3 multi-stage-multi-agent/hello.py'
+        sh '''
+            pip3 install -r multi-stage-multi-agent/requirements.txt
+            python3  multi-stage-multi-agent/hello.py
+            '''
       }
     }
     stage('Database'){
