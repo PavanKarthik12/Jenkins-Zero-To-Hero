@@ -14,7 +14,7 @@ pipeline {
         docker { image 'python' }
       }
       steps {
-        sh 'python hello.py'
+        sh 'python https://github.com/PavanKarthik12/Jenkins-Zero-To-Hero/blob/main/multi-stage-multi-agent/hello.py'
       }
     }
     stage('Database'){
