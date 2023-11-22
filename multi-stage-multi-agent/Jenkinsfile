@@ -27,7 +27,7 @@ pipeline {
         docker { image 'mysql'}
       }
       steps{
-        sh 'SELECT VERSION();'
+        sh 'mysql -V'
       }
   }
 }
