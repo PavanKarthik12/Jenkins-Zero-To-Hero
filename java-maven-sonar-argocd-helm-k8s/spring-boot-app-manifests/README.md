@@ -24,3 +24,6 @@ steps to install argo CD in a EC2 instance :
 6) Now that docker kubectl minikube got installed now you can download argo cd from official documentation .4
 
      https://operatorhub.io/operator/argocd-operator
+
+
+port forward - kubectl port-forward service/example-argocd-server --address 0.0.0.0 5000:80
