@@ -1,6 +1,9 @@
 name: Test, Upload artifact and Deploy to Heroku
 
-on: workflow_dispatch
+on: 
+  - workflow_dispatch
+  - pull_request
+  - push
 
 jobs:
   test:
