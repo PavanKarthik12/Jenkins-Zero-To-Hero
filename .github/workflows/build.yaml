@@ -9,5 +9,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Compile Java
-        uses: PavanKarthik12/Reactjs-Project-custom-actions/.github/workflows/maven-build.yml@master
+      - uses: PavanKarthik12/Reactjs-Project-custom-actions/.github/workflows/maven-build.yml@master
