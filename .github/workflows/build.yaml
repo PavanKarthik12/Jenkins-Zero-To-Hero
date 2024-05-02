@@ -1,0 +1,15 @@
+name: Test, Upload artifact and Deploy to Heroku
+
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ 8, 11 ]
+    name: Run unit tests on Java ${{ matrix.java }}
+    steps:
+      - name: Setup java
+        uses: actions/setup-java@v1
+      - uses: Reactjs-Project-custom-actions/blob/master/.github/actions/maven_build@master
