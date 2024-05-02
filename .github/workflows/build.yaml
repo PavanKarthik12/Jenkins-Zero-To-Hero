@@ -7,4 +7,4 @@ on:
 
 jobs:
   call-workflow:
-    uses: PavanKarthik12/Reactjs-Project-custom-actions/.github/actions/maven_build/action.yaml@master
+    uses: PavanKarthik12/Reactjs-Project-custom-actions/.github/workflows/action.yaml@master
