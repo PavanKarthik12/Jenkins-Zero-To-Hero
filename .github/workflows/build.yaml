@@ -6,7 +6,5 @@ on:
   - push
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: PavanKarthik12/Reactjs-Project-custom-actions/.github/workflows/maven-build.yml@master
+  call-workflow:
+    uses: PavanKarthik12/Reactjs-Project-custom-actions/.github/workflows/maven_build.yml@master
