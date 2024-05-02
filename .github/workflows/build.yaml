@@ -8,6 +8,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Run unit tests on Java ${{ matrix.java }}
     steps:
-      - uses: PavanKarthik12/Reactjs-Project-custom-actions/.github/workflows/maven-build.yml@master
+      - name: Compile Java
+        uses: PavanKarthik12/Reactjs-Project-custom-actions/.github/workflows/maven-build.yml@master
